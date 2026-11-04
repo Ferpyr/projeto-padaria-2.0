@@ -4,8 +4,8 @@ app=Flask()
 
 @app.route('/', methods=['GET'])
 def pao():
-    return render_template('pag-pao.html')
+    return render_template('Nome do negocio.html')
 
 @app.route('/')
 def about():
-    return render_template('.html')
+    return render_template('Nome do negocio.html')
