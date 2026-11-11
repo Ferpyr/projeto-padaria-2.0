@@ -70,5 +70,9 @@ def fazer_cadastro():
 def entregas():
     return render_template('entregas.html')
 
+@app.route('/pagamento', methods=['GET'])
+def pagamento():
+    return 'Luiz'
+
 if __name__ == '__main__':
     app.run(debug=True)
