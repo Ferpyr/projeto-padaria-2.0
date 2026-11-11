@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #3b2418;
+}
+
+header {
+    background-color: #542b1f;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f5bd78;
+}
+
+.banner {
+    background: linear-gradient(120deg, #713c2b, #b87545);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 17px;
+}
+
+main {
+    padding: 45px 7%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 12px;
+    color: #542b1f;
+}
+
+.descricao {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.entrega-container {
+    background-color: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form h3 {
+    color: #754321;
+    font-size: 21px;
+    margin: 18px 0 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+label {
+    font-weight: bold;
+    color: #542b1f;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a56838;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.campos-duplos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+}
+
+.campos-duplos div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+button {
+    padding: 14px;
+    background-color: #713c2b;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a64f25;
+}
+
+footer {
+    background-color: #542b1f;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    main {
+        padding: 30px 5%;
+    }
+
+    .entrega-container {
+        padding: 22px;
+    }
+
+    .campos-duplos {
+        grid-template-columns: 1fr;
+    }
+}
