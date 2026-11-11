@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,31 +7,31 @@
     <link rel="stylesheet" href="/static/css/login.css">
 </head>
 <body>
-
     <div class="login-container">
-        
-
         <h1>Padaria Somos Gueto</h1>
         <p class="subtitulo">O sabor de um novo dia</p>
 
-        <form id="formLogin">
+        <form id="formLogin" action="/fazer_login" method="POST">
+
             <label>E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
 
             <label>Senha</label>
-            <input type="password" id="senha" placeholder="Digite sua senha" required>
+            <input
+                type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
 
             <button type="submit">Entrar</button>
 
             <p id="mensagem"></p>
+
         </form>
 
         <p class="cadastro">
             Não tem uma conta?
-            <a href="cadastro.html">Cadastre-se</a>
+            <a href="/cadastro">Cadastre-se</a>
         </p>
+
     </div>
 
-       <script src="../static/js/login.js?v=4"></script>
 </body>
 </html>

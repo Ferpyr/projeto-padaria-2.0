@@ -1,3 +1,4 @@
+-- Active: 1788286412804@@127.0.0.1@5432@banco_padaria
 CREATE DATABASE banco_padaria;
 
 CREATE TABLE clientes (
@@ -8,8 +9,10 @@ CREATE TABLE clientes (
     cidade VARCHAR(100) NOT NULL,
     estado VARCHAR(3) NOT NULL,
     cep VARCHAR(200) NOT NULL,
-    data_nascimento DATE NOT NULL
+    data_nascimento DATE NOT NULL,
+    senha VARCHAR(30) NOT NULL
 );
+
 
 CREATE TABLE categoria (
     id_categoria INTEGER NOT NULL PRIMARY KEY,
