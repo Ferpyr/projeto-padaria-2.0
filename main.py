@@ -62,5 +62,9 @@ def fazer_cadastro():
     conexao.close()
     return redirect(url_for('login'))
 
+@app.route('/entregas', methods=['GET'])
+def entregas():
+    return render_template('entregas.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
