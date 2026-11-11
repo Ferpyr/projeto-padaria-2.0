@@ -1,4 +1,4 @@
--- Active: 1788286412804@@127.0.0.1@5432@banco_padaria
+-- Active: 1794415373629@@127.0.0.1@5432@banco_padaria
 INSERT INTO clientes (id_cliente, nome, email, telefone, cidade, estado, cep, data_nascimento, senha)
 VALUES
 (1, 'João Silva', 'joao@gmail.com', '(11) 99999-1111', 'São Paulo', 'SP', '01001-000', '1995-05-12', 'senha123'),
