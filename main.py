@@ -22,6 +22,10 @@ def fazer_login():
     else:
         return render_template('login.html')
 
+@app.route('/produtos')
+def produtos():
+    return render_template('produtos.html')
+
 @app.route('/cadastro', methods=['GET'])
 def cadastro():
     return render_template('cadastro.html')
