@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #3b2418;
+}
+
+header {
+    background-color: #542b1f;
+    color: white;
+    height: 150px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    width: 250px;
+    height: 140px;
+    object-fit: contain;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f5bd78;
+}
+
+.banner {
+    background: linear-gradient(120deg, #713c2b, #b87545);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 17px;
+}
+
+main {
+    padding: 45px 7%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 12px;
+    color: #542b1f;
+}
+
+.descricao {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.pagamento-container {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.resumo {
+    background-color: #fff8f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #754321;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.resumo p {
+    margin-bottom: 10px;
+}
+
+.valor {
+    font-size: 22px;
+    font-weight: bold;
+    color: #542b1f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.opcao input {
+    accent-color: #713c2b;
+    width: 17px;
+    height: 17px;
+}
+
+.opcao label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button {
+    padding: 14px;
+    background-color: #713c2b;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a64f25;
+}
+
+footer {
+    background-color: #542b1f;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}

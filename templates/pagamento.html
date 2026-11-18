@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento | Padaria Somos Gueto</title>
+    <link rel="stylesheet" href="/static/css/pagamentos.css">
+</head>
+<body>
+    <header>
+        <img id="logo-h" src="/static/imgs/logo.png" alt="Logo Somos Gueto">
+        <nav>
+            <a href="/produtos">Produtos</a>
+            <a href="/entregas">Entregas</a>
+            <a href="/pagamentos_feitos">Pagamentos</a>
+            <a href="/login">Sair</a>
+        </nav>
+    </header>
+    <section class="banner">
+        <h2>Finalize seu pedido!</h2>
+        <p>Escolha a forma de pagamento para continuar.</p>
+    </section>
+    <main>
+        <h2 class="titulo">Pagamento</h2>
+        <p class="descricao">Confira o valor e escolha como deseja pagar.</p>
+        <div class="pagamento-container">
+            <div class="resumo">
+                <h3>Resumo do pedido</h3>
+                <p>Número do pedido: {{ id_pedido }}</p>
+                <p class="valor">
+                    Total: R$ {{ "%.2f"|format(valor) }}
+                </p>
+            </div>
+            <form action="/fazer_pagamento" method="POST">
+                <input type="hidden" name="id_pedido"
+                       value="{{ id_pedido }}">
+                <h3>Forma de pagamento</h3>
+                <div class="opcao">
+                    <input type="radio" name="forma_pagamento"
+                           value="Pix" id="pix" required>
+                    <label for="pix">Pix</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="forma_pagamento"
+                           value="Dinheiro" id="dinheiro">
+                    <label for="dinheiro">Dinheiro</label>
+                </div>
+                <div class="opcao">
+                    <input type="radio" name="forma_pagamento"
+                           value="Cartão" id="cartao">
+                    <label for="cartao">Cartão</label>
+                </div>
+                <button type="submit">Finalizar pagamento</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 Padaria Somos Gueto | Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

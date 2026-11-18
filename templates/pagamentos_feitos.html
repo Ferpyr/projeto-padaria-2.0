@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamentos Realizados - Somos Gueto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pagamentos_feitos.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='imgs/logo.png') }}" alt="Logo Somos Gueto">
+        <nav>
+            <a href="/produtos">Produtos</a>
+            <a href="/entregas">Entregas</a>
+            <a href="/carrinho">Carrinho</a>
+            <a href="/pagamentos_feitos">Pagamentos</a>
+        </nav>
+    </header>
+    <section class="banner">
+        <h1>Pagamentos Realizados</h1>
+        <p>Confira o histórico de pagamentos dos pedidos.</p>
+    </section>
+    <main>
+        <h2>Histórico de Pagamentos</h2>
+        {% if pagamentos %}
+            <div class="lista-pagamentos">
+                {% for pagamento in pagamentos %}
+                    <div class="card-pagamento">
+                        <div class="topo-card">
+                            <h3>Pagamento #{{ pagamento[0] }}</h3>
+                            <span>{{ pagamento[4] }}</span>
+                        </div>
+                        <p><strong>ID do pedido:</strong> #{{ pagamento[1] }}</p>
+                        <p><strong>Forma de pagamento:</strong>
+                            {{ pagamento[2] }}
+                        </p>
+                        <p><strong>Valor:</strong>
+                            R$ {{ "%.2f"|format(pagamento[3]|float) }}
+                        </p>
+                        <p><strong>Data:</strong>
+                            {{ pagamento[5].strftime('%d/%m/%Y %H:%M') }}
+                        </p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="vazio">
+                <h3>Nenhum pagamento encontrado.</h3>
+                <p>Quando você realizar um pagamento, ele aparecerá aqui.</p>
+                <a href="/produtos">Ver produtos</a>
+            </div>
+        {% endif %}
+    </main>
+    <footer>
+        <p>Somos Gueto - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

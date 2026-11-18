@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,28 +7,23 @@
     <link rel="stylesheet" href="/static/css/produtos.css">
 </head>
 <body>
-
     <header>
         <img id="logo-h" src="/static/imgs/logo.png" alt="Logo Somos Gueto">
-
         <nav>
-            <a href="produtos">Produtos</a>
-            <a href="entregas">Entregas</a>
-            <a href="pagamento">Pagamentos</a>
-            <a href="login">Sair</a>
+            <a href="/produtos">Produtos</a>
+            <a href="/entregas">Entregas</a>
+            <a href="/pagamentos_feitos">Pagamentos</a>
+            <a href="/carrinho">Carrinho</a>
+            <a href="/login">Sair</a>
         </nav>
     </header>
-
     <section class="banner">
         <h2>O melhor sabor está aqui!</h2>
         <p>Produtos fresquinhos feitos especialmente para você.</p>
     </section>
-
     <main>
         <h2 class="titulo">Nosso Cardápio</h2>
-
         <div class="produtos">
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/pao-frances.webp" alt="Pão Francês">
@@ -37,9 +31,11 @@
                 <h3>Pão Francês</h3>
                 <p>Crocante por fora e macio por dentro.</p>
                 <strong>R$ 0,80</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="1">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/croissant.jpg" alt="Croissant">
@@ -47,9 +43,11 @@
                 <h3>Croissant</h3>
                 <p>Massa folhada e sabor irresistível.</p>
                 <strong>R$ 7,50</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="2">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/bolo-de-chocolate.jpg" alt="Bolo de Chocolate">
@@ -57,9 +55,11 @@
                 <h3>Bolo de Chocolate</h3>
                 <p>Bolo fofinho com cobertura de chocolate.</p>
                 <strong>R$ 12,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="3">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/Sonho.webp" alt="Sonho">
@@ -67,9 +67,11 @@
                 <h3>Sonho</h3>
                 <p>Recheado com creme especial.</p>
                 <strong>R$ 6,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="4">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/mistoQuente.webp" alt="Misto Quente">
@@ -77,9 +79,11 @@
                 <h3>Misto Quente</h3>
                 <p>Pão, queijo e presunto.</p>
                 <strong>R$ 9,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="5">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/paodequaijo.jpg" alt="Pão de Queijo">
@@ -87,9 +91,11 @@
                 <h3>Pão de Queijo</h3>
                 <p>Quentinho e cheio de queijo.</p>
                 <strong>R$ 4,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="6">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/paodeleite.jpg" alt="Pão de Leite">
@@ -97,9 +103,11 @@
                 <h3>Pão de Leite</h3>
                 <p>Delicioso e nutritivo.</p>
                 <strong>R$ 2,50</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="7">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/cuecavirada.webp" alt="Cueca virada">
@@ -107,9 +115,11 @@
                 <h3>Cueca virada</h3>
                 <p>Deliciosa e nutritiva.</p>
                 <strong>R$ 3,50</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="8">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/paesdeforma.jpg" alt="Pão de forma">
@@ -117,9 +127,11 @@
                 <h3>Pão de forma</h3>
                 <p>Delicioso e nutritivo.</p>
                 <strong>R$ 5,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="9">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/pastel.webp" alt="Pastel">
@@ -127,9 +139,11 @@
                 <h3>Pastel</h3>
                 <p>Recheado com carne e queijo.</p>
                 <strong>R$ 12,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="10">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/coxinha.webp" alt="Coxinha">
@@ -137,9 +151,11 @@
                 <h3>Coxinha</h3>
                 <p>Recheada com frango desfiado ou carne moída.</p>
                 <strong>R$ 8,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="11">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/esfiha.jpg" alt="Esfirra">
@@ -147,9 +163,11 @@
                 <h3>Esfirra</h3>
                 <p>Recheada com carne e queijo.</p>
                 <strong>R$ 6,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="12">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/pudim.webp" alt="Pudim">
@@ -157,9 +175,11 @@
                 <h3>Pudim</h3>
                 <p>Delicioso e cremoso.</p>
                 <strong>R$ 7,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="13">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/cafe.jpg" alt="Café">
@@ -167,9 +187,11 @@
                 <h3>Café</h3>
                 <p>Delicioso e aromático.</p>
                 <strong>R$ 3,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="14">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/sucosNatura.jpg" alt="Sucos Naturais">
@@ -177,9 +199,11 @@
                 <h3>Sucos Naturais</h3>
                 <p>Deliciosos e refrescantes.</p>
                 <strong>R$ 4,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="15">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/capuccino.webp" alt="Cappuccino">
@@ -187,9 +211,11 @@
                 <h3>Cappuccino</h3>
                 <p>Delicioso e aromático.</p>
                 <strong>R$ 5,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="16">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
             <div class="card">
                 <div class="imagem">
                     <img src="/static/imgs/pizzas.jpg" alt="Pizza">
@@ -197,15 +223,15 @@
                 <h3>Pizza</h3>
                 <p>Deliciosa e saborosa.</p>
                 <strong>R$ 5,00</strong>
-                <button>Adicionar ao carrinho</button>
+                <form action="/adicionar_carrinho" method="POST">
+                    <input type="hidden" name="id_produto" value="17">
+                    <button type="submit">Adicionar ao carrinho</button>
+                </form>
             </div>
-
         </div>
     </main>
-
     <footer>
         <p>© 2026 Padaria Somos Gueto | Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>

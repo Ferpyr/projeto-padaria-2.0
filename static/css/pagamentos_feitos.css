@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #3b2418;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #542b1f;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header img {
+    width: 250px;
+    height: 140px;
+    object-fit: contain;
+    position: absolute;
+    left: 3%;
+}
+
+nav {
+    display: flex;
+    gap: 38px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e6b68c;
+}
+
+.banner {
+    background: linear-gradient(90deg, #713c2b, #b87545);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.banner h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+main {
+    padding: 45px 7%;
+}
+
+main h2 {
+    text-align: center;
+    color: #542b1f;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.lista-pagamentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card-pagamento {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-left: 6px solid #b87545;
+}
+
+.topo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.topo-card h3 {
+    color: #713c2b;
+    font-size: 20px;
+}
+
+.topo-card span {
+    background-color: #f5e5d8;
+    color: #713c2b;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-pagamento p {
+    margin-bottom: 13px;
+    font-size: 16px;
+}
+
+.vazio {
+    background-color: white;
+    text-align: center;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.vazio h3 {
+    margin-bottom: 15px;
+    color: #713c2b;
+}
+
+.vazio p {
+    margin-bottom: 25px;
+}
+
+.vazio a {
+    background-color: #713c2b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #542b1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
